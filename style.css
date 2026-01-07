@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+}
+
+canvas {
+  background: #020617;
+  border-radius: 8px;
+}
+
+.controls {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 200px;
+}
+
+input {
+  padding: 5px;
+  font-size: 14px;
+}
+input[type="range"],
+input[type="number"] {
+  width: 200px;   
+}
+
+
+.values {
+  width: 80%;
+  margin: 10px auto 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 16px;
+}
+
+select {
+  width: 200px;         
+  padding: 6px 10px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+option {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+}
+
+.controls {
+  flex-wrap: wrap;
+}
+
+.control {
+  width: 100%;
+  max-width: 100%;
+}
+
+.control input,
+.control select {
+  width: 100%;
+}
+
+
+.values {
+  flex-wrap: wrap;
+  gap: 12px;
+  text-align: center;
+}
+
+
+canvas {
+  max-height: 55vh;
+}
+
+
+@media (max-width: 600px) {
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .control {
+    width: 100%;
+  }
+
+  .values {
+    font-size: 14px;
+  }
+
+  canvas {
+    max-height: 50vh;
+  }
+
+
+  button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .values {
+    font-size: 13px;
+  }
+
+  canvas {
+    max-height: 45vh;
+  }
+}
+.controls .control {
+  width: 200px !important;
+}
+
+.controls input[type="range"],
+.controls input[type="number"],
+.controls select {
+  width: 200px !important;
+}
